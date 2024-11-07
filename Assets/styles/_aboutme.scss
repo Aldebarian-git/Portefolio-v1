@@ -1,0 +1,20 @@
+#aboutme {
+  width: 80%;
+  max-width: 1000px;
+  margin: 4rem auto;
+  h2 {
+    font-family: "Orelega";
+    font-weight: 100;
+    margin: 3rem 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-top: 4px solid rgba(255, 166, 0, 0.637);
+      width: 100px;
+      top: 30px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
