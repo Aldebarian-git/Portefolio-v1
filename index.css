@@ -338,7 +338,7 @@ header .header-right {
   left: 670px;
 }
 #projets .container-projets .projet2 .img2 {
-  background: url(Assets/imgs/lamontagne.jpg) center/cover;
+  background: url(/Assets/imgs/lamontagne.jpg) center/cover;
   border-radius: 50px;
   height: 200px;
   width: 200px;
