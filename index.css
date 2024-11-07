@@ -1,0 +1,754 @@
+@font-face {
+  font-family: "Orelega";
+  src: url(./Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Bricolage";
+  src: url(./Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: "Open";
+  src: url(./Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Bricolage";
+  line-height: 20px;
+}
+
+span {
+  font-family: "Open";
+  font-size: 12px;
+}
+
+i {
+  color: orange;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.navbar {
+  width: 80%;
+  max-width: 1000px;
+  height: 80px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid orange;
+}
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: "Bricolage";
+  font-weight: 500;
+}
+.navbar ul span {
+  font-family: "Bricolage";
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.navbar ul li {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.navbar ul li:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.navbar ul li:hover span {
+  font-size: 25px;
+  color: orange;
+}
+.navbar .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 1rem;
+}
+.navbar .contact i {
+  font-size: 25px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.navbar .contact i:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+header {
+  width: 80%;
+  max-width: 1000px;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: auto;
+  padding-left: 4rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  border-left: 1px solid orange;
+}
+header .header-left h1 {
+  font-family: "Orelega";
+  font-weight: 100;
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+header .header-left h2 {
+  font-family: "Bricolage";
+  font-weight: 800;
+  padding: 1rem 0;
+  position: relative;
+}
+header .header-left h2::after {
+  content: "";
+  position: absolute;
+  border-top: 8px solid rgba(255, 166, 0, 0.637);
+  width: 312px;
+  top: 33px;
+  left: 0;
+  z-index: -1;
+}
+header .header-left p {
+  margin: 0.5rem 0;
+}
+header .header-right {
+  height: 50%;
+  background: url(/Assets/imgs/picture.jpg) center/cover;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#aboutme {
+  width: 80%;
+  max-width: 1000px;
+  margin: 4rem auto;
+}
+#aboutme h2 {
+  font-family: "Orelega";
+  font-weight: 100;
+  margin: 3rem 0;
+  position: relative;
+}
+#aboutme h2::after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid rgba(255, 166, 0, 0.637);
+  width: 100px;
+  top: 30px;
+  left: 0;
+  z-index: -1;
+}
+
+#technologies {
+  width: 80%;
+  max-width: 1000px;
+  margin: 4rem auto;
+}
+#technologies h2 {
+  font-family: "Orelega";
+  font-weight: 100;
+  margin: 3rem 0;
+  position: relative;
+}
+#technologies h2::after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid rgba(255, 166, 0, 0.637);
+  width: 100px;
+  top: 30px;
+  left: 0;
+  z-index: -1;
+}
+#technologies h3 {
+  font-family: "Open";
+}
+#technologies .box-container {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  height: 400px;
+}
+#technologies .box-container div {
+  border: 1px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#technologies img {
+  height: 100%;
+  max-height: 80px;
+  width: 100%;
+  max-width: 80px;
+  margin: 1rem;
+}
+
+#projets {
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto 2rem;
+  height: 700px;
+  position: relative;
+}
+#projets h2 {
+  text-align: center;
+  font-family: "Orelega";
+  font-weight: 100;
+  margin: 3rem 0;
+}
+#projets h2::after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid rgba(255, 166, 0, 0.637);
+  width: 100px;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-60%);
+  transform: translateX(-60%);
+  z-index: -1;
+}
+#projets .container-projets {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+#projets .container-projets h3 {
+  font-family: "Bricolage";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 1.5rem 0;
+}
+#projets .container-projets a {
+  text-align: right;
+  text-transform: uppercase;
+  color: orange;
+  font-family: "Bricolage";
+  margin: 1rem 0;
+}
+#projets .container-projets .projet1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#projets .container-projets .projet1 .img1 {
+  background: url(/Assets/imgs/leresto.jpg) center/cover;
+  border-radius: 50px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#projets .container-projets .projet1 .projet1-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  height: 250px;
+  width: 250px;
+  margin: 1rem;
+}
+#projets .container-projets .projet2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 65px;
+  left: 670px;
+}
+#projets .container-projets .projet2 .img2 {
+  background: url(/Assets/imgs/lamontagne.jpg) center/cover;
+  border-radius: 50px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#projets .container-projets .projet2 .projet2-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  height: 250px;
+  width: 250px;
+  margin: 1rem;
+}
+#projets .container-projets .projet3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 325px;
+  left: 200px;
+}
+#projets .container-projets .projet3 .img3 {
+  background: url(/Assets/imgs/gamingcampus.jpg) center/cover;
+  border-radius: 50px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#projets .container-projets .projet3 .projet3-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  height: 250px;
+  width: 250px;
+  margin: 1rem;
+}
+#projets .button-projet {
+  position: absolute;
+  top: 100%;
+  left: 950px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+#projets .button-projet:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+#projets .button-projet a {
+  text-transform: uppercase;
+  color: orange;
+  font-family: "Bricolage";
+  margin: 1rem 0;
+}
+
+#experience {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+#experience h2:first-child {
+  text-align: center;
+  font-family: "Orelega";
+  font-weight: 100;
+  margin: 3rem 0;
+  position: relative;
+}
+#experience h2:first-child::after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid rgba(255, 166, 0, 0.637);
+  width: 100px;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-82%);
+  transform: translateX(-82%);
+  z-index: -1;
+}
+#experience .line-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#experience .line-container i {
+  padding: 0;
+}
+#experience .line-container #box1 {
+  height: 150px;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  z-index: -1;
+}
+#experience .line-container #box1::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 500px;
+  top: 50%;
+  left: 9px;
+}
+#experience .line-container #box1 h2 {
+  font-family: "Open";
+  font-size: 16px;
+  white-space: nowrap;
+}
+#experience .line-container #box1 h3 {
+  font-family: "Open";
+  color: orange;
+  white-space: nowrap;
+  font-size: 14px;
+}
+#experience .line-container #box1 p {
+  font-family: "Bricolage";
+}
+#experience .line-container #box1 .icone {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#experience .line-container #box2 {
+  height: 150px;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  position: absolute;
+  top: 35%;
+  right: 50%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: right;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  z-index: -1;
+}
+#experience .line-container #box2::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 500px;
+  top: 50%;
+  right: 9px;
+}
+#experience .line-container #box2 h2 {
+  font-family: "Open";
+  font-size: 16px;
+  white-space: nowrap;
+}
+#experience .line-container #box2 h3 {
+  font-family: "Open";
+  color: orange;
+  white-space: nowrap;
+  font-size: 14px;
+}
+#experience .line-container #box2 p {
+  font-family: "Bricolage";
+}
+#experience .line-container #box2 .icone {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+#experience .line-container #box3 {
+  height: 150px;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  z-index: -1;
+}
+#experience .line-container #box3::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 500px;
+  top: 50%;
+  left: 9px;
+}
+#experience .line-container #box3 h2 {
+  font-family: "Open";
+  font-size: 16px;
+  white-space: nowrap;
+}
+#experience .line-container #box3 h3 {
+  font-family: "Open";
+  color: orange;
+  white-space: nowrap;
+  font-size: 14px;
+}
+#experience .line-container #box3 p {
+  font-family: "Bricolage";
+}
+#experience .line-container #box3 .icone {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#experience .line-container #box4 {
+  height: 150px;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  position: absolute;
+  top: 75%;
+  right: 50%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  z-index: -1;
+}
+#experience .line-container #box4::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 500px;
+  top: 50%;
+  right: 9px;
+}
+#experience .arrow-up {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+}
+#experience .line {
+  position: relative;
+  display: inline-block;
+  width: 3px;
+  height: 800px;
+  background-color: black;
+}
+
+#game {
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 4rem auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+#game .score {
+  color: #ffa500;
+  font-size: 4rem;
+  font-family: "Orelega";
+}
+#game .gamebox {
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: url(/Assets/imgs/crosshair.ico) 16 16, crosshair;
+  border: 1px solid orange;
+  border-radius: 50px;
+}
+#game .gamebox .bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: orange;
+  opacity: 0;
+  -webkit-animation: bubble 8s forwards;
+  animation: bubble 8s forwards;
+  -webkit-filter: hue-rotate(-30deg);
+  filter: hue-rotate(-30deg);
+}
+@-webkit-keyframes bubble {
+  to {
+    top: -150px;
+    left: var(--left);
+    opacity: 1;
+    -webkit-filter: hue-rotate(-31deg);
+    filter: hue-rotate(-31deg);
+  }
+}
+@keyframes bubble {
+  to {
+    top: -150px;
+    left: var(--left);
+    opacity: 1;
+    -webkit-filter: hue-rotate(-31deg);
+    filter: hue-rotate(-31deg);
+  }
+}
+#game .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#game .rules h2 {
+  font-family: "Orelega";
+  font-weight: 100;
+}
+#game .rules h2 span {
+  font-family: "Orelega";
+  font-size: 3rem;
+  color: orange;
+}
+#game .rules h3 {
+  font-family: "Orelega";
+  font-weight: 100;
+}
+#game .arrow-orange {
+  background: url(/Assets/imgs/arrow.png) center/contain no-repeat;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 90px;
+  left: 45%;
+} /*# sourceMappingURL=index.css.map */

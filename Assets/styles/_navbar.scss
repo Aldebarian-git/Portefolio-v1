@@ -1,0 +1,44 @@
+.navbar {
+  width: 80%;
+  max-width: 1000px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-bottom: 1px solid orange;
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-family: "Bricolage";
+    font-weight: 500;
+    span {
+      font-family: "Bricolage";
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+    li {
+      transition: 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        span {
+          font-size: 25px;
+          color: orange;
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    i {
+      font-size: 25px;
+      transition: 0.3s ease;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+}

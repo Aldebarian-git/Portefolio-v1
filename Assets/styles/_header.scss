@@ -1,0 +1,44 @@
+header {
+  width: 80%;
+  max-width: 1000px;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: auto;
+  padding-left: 4rem;
+  align-items: center;
+  justify-content: left;
+  border-left: 1px solid orange;
+
+  .header-left {
+    h1 {
+      font-family: "Orelega";
+      font-weight: 100;
+      padding: 1rem 0;
+      font-size: 3rem;
+    }
+    h2 {
+      font-family: "Bricolage";
+      font-weight: 800;
+      padding: 1rem 0;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        border-top: 8px solid rgba(255, 166, 0, 0.637);
+        width: 312px;
+        top: 33px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+  .header-right {
+    height: 50%;
+    background: url(/Assets/imgs/picture.jpg) center/cover;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
