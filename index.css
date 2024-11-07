@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Orelega";
-  src: url(./Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
+  src: url(Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
 }
 @font-face {
   font-family: "Bricolage";
-  src: url(./Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+  src: url(Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
 }
 @font-face {
   font-family: "Open";
-  src: url(./Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  src: url(Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
 * {
   margin: 0;
@@ -160,7 +160,7 @@ header .header-left p {
 }
 header .header-right {
   height: 50%;
-  background: url(Assets/imgs/picture.jpg) center/cover; 
+  background: url(Assets/imgs/picture.jpg) center/cover;
   border-radius: 50px 50px 50px 50px;
 }
 
@@ -301,7 +301,7 @@ header .header-right {
   left: 0;
 }
 #projets .container-projets .projet1 .img1 {
-  background: url(/Assets/imgs/leresto.jpg) center/cover;
+  background: url(Assets/imgs/leresto.jpg) center/cover;
   border-radius: 50px;
   height: 200px;
   width: 200px;
@@ -338,7 +338,7 @@ header .header-right {
   left: 670px;
 }
 #projets .container-projets .projet2 .img2 {
-  background: url(/Assets/imgs/lamontagne.jpg) center/cover;
+  background: url(Assets/imgs/lamontagne.jpg) center/cover;
   border-radius: 50px;
   height: 200px;
   width: 200px;
@@ -375,7 +375,7 @@ header .header-right {
   left: 200px;
 }
 #projets .container-projets .projet3 .img3 {
-  background: url(/Assets/imgs/gamingcampus.jpg) center/cover;
+  background: url(Assets/imgs/gamingcampus.jpg) center/cover;
   border-radius: 50px;
   height: 200px;
   width: 200px;
@@ -683,7 +683,7 @@ header .header-right {
   margin: auto;
   position: relative;
   overflow: hidden;
-  cursor: url(/Assets/imgs/crosshair.ico) 16 16, crosshair;
+  cursor: url(Assets/imgs/crosshair.ico) 16 16, crosshair;
   border: 1px solid orange;
   border-radius: 50px;
 }
@@ -745,7 +745,7 @@ header .header-right {
   font-weight: 100;
 }
 #game .arrow-orange {
-  background: url(/Assets/imgs/arrow.png) center/contain no-repeat;
+  background: url(Assets/imgs/arrow.png) center/contain no-repeat;
   height: 100px;
   width: 150px;
   position: absolute;
