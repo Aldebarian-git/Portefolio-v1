@@ -160,7 +160,7 @@ header .header-left p {
 }
 header .header-right {
   height: 50%;
-  background: url(/Assets/imgs/picture.jpg) center/cover;
+  background: url(../Assets/imgs/picture.jpg) center/cover;
   border-radius: 50px 50px 50px 50px;
 }
 
