@@ -6,6 +6,7 @@ let counter = 0;
 const bubbleMaker = () => {
   const gamebox = document.querySelector(".gamebox");
   const bubble = document.createElement("span");
+  const pop = new audio("/Assets/audio/pop.mp3");
 
   bubble.classList.add("bubble");
   gamebox.appendChild(bubble);
