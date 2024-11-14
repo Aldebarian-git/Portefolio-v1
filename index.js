@@ -1,6 +1,6 @@
 const counterDisplay = document.querySelector("h3 span");
 console.log(counterDisplay);
-const pop = new Audio("/Assets/audio/pop.mp3");
+const pop = new Audio("./Assets/audio/pop.mp3");
 
 let counter = 0;
 
