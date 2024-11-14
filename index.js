@@ -20,6 +20,7 @@ const bubbleMaker = () => {
   bubble.addEventListener("click", () => {
     counter++;
     counterDisplay.textContent = counter;
+    pop.play();
     bubble.remove();
   });
   setTimeout(() => {
